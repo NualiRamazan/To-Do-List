@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="to_day.png">
+</head>
+<body>
+    <div class="container">
+        <p>
+            <label for="new-task">toDo list</label>
+            <input id="new-task" type="text" placeholder="Add new task...">
+            <button class="add">Add</button>
+        </p>
+
+        <h3>Task-to-do</h3>
+        <ul id="incomplete-tasks">
+            <li>
+                <label>Пойти кушать</label>
+                <button class='completed'>Completed</button>
+                <button class='delete'>Delete</button>
+            </li>
+            <li>
+                <label>Играть</label>
+                <button class='completed'>Completed</button>
+                <button class='delete'>Delete</button>
+            </li>
+        </ul>
+
+        <h3>Completed-task</h3>
+        <ul id="completed-tasks">
+            <li>
+                <label>Попить воды</label>
+                <button class='delete'>Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
